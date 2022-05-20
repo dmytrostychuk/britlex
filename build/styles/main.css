@@ -409,18 +409,11 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("ttf");
-}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-image: url("../img/view.jpg");
-  font-family: Roboto;
 }
 
 .container {
@@ -437,4 +430,8 @@ body {
 
 .footer {
   margin-top: auto;
+}
+
+h1 {
+  font-family: "Poppins";
 }
