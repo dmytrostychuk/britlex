@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,6 +17,11 @@ body {
   &--no-margin {
     margin-bottom: 0;
   }
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
 }
 
 .footer {
