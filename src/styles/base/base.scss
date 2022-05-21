@@ -9,6 +9,23 @@ body {
 .container {
   margin: 0 auto;
   max-width: map-get($map: $breakpoints, $key: desktop);
+  padding: 0 15px;
+
+  @include mq($from: phablet) {
+    padding: 0 30px;
+  }
+
+  @include mq($from: tablet) {
+    padding: 0 38px;
+  }
+
+  @include mq($from: tablet-wide) {
+    padding: 0 31px;
+  }
+
+  @include mq($from: desktop) {
+    padding: 0 131px;
+  }
 }
 
 .section {
@@ -19,6 +36,12 @@ body {
   }
 }
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   transition: .3s;
@@ -27,4 +50,3 @@ a {
 .footer {
   margin-top: auto;
 }
-
