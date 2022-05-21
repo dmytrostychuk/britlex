@@ -409,16 +409,37 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("../img/view.jpg");
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1338px;
 }
 
 .section {
@@ -432,6 +453,22 @@ body {
   margin-top: auto;
 }
 
-h1 {
-  font-family: "Poppins";
+.button {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../img/view.jpg");
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .button {
+    color: red;
+  }
+}
+
+@media (min-width: 1338px) {
+  .button {
+    color: blue;
+  }
 }

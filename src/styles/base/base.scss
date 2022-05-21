@@ -2,12 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('../img/view.jpg');
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  max-width: $max-container-width;
+  max-width: map-get($map: $breakpoints, $key: desktop);
 }
 
 .section {
@@ -22,6 +22,3 @@ body {
   margin-top: auto;
 }
 
-h1 {
-  font-family:"Poppins";
-}
