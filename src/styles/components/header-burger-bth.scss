@@ -3,6 +3,14 @@
 	width: 33px;
 	height: 20px;
 
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
 	&::before,
 	&::after,
 	span {
@@ -28,6 +36,10 @@
 	&::after {
 		width: 16px;
 		transform: translateY(5px);
+	}
+
+	@include mq($from: tablet-wide) {
+		display: none;
 	}
 }
 
