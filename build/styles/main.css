@@ -451,12 +451,6 @@ body {
   margin-bottom: 0;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
   transition: 0.3s;
@@ -491,6 +485,12 @@ a {
 
 .menu__logo-finish {
   color: #8F95A5;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu__nav {
