@@ -8,8 +8,14 @@
 .menu__nav {
 	position: absolute;
 	top: 60px;
-	transform: translateX(-300px);
+	transform: translateX(-700px);
 	transition: .5s all;
+	font-size: 22px;
+
+	@include mq($from: phablet) {
+		top: 80px;
+		font-size: 24px;
+  }
 }
 
 .menu__nav-active {
@@ -17,6 +23,10 @@
 	background-color: #ffffff;
 	border-top: 1px solid #C4C4C4;
 	width: 100%;
+
+	@include mq($from: tablet) {
+    background-color: rgba(255,255,255,.7);;
+  }
 }
 
 .menu__list {
@@ -34,6 +44,17 @@
 	}
 
 	a {
-		color: #263238;
+		color: #263238; 
 	}
+
+	@include mq($from: phablet) {
+		li:first-child {
+			margin-top: 35px;
+		}
+  }
+
+	@include mq($from: tablet) {
+    background-color: #ffffff;
+		width: 380px;
+  }
 }

@@ -39,6 +39,14 @@ body {
 a {
   text-decoration: none;
   transition: .3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .lock {

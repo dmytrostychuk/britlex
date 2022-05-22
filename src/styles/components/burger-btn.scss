@@ -3,25 +3,21 @@
 	width: 33px;
 	height: 20px;
 
-	&:hover {
-		opacity: 0.5;
-	}
-
-	&:active {
-		opacity: 0.3;
-	}
 
 	&::before,
 	&::after,
 	span {
 		content: "";
 		position: absolute;
-		top: 50%;
 		height: 3px;
 		width: 33px;
 		background-color: #39515E;
 		border-radius: 3px;
 		transition: .3s;
+	}
+
+	span {
+		top: 7px;
 	}
 
 	&::before,
@@ -30,13 +26,36 @@
 	}
 
 	&::before {
+		top: 5px;
 		transform: translateY(-5px);
 	}
 
 	&::after {
+		top: 10px;
 		width: 16px;
 		transform: translateY(5px);
 	}
+
+	@include mq($from: phablet) {
+		width: 42px;
+		height: 24px;
+		
+		&::before,
+		&::after,
+		span {
+			height: 4px;
+			width: 42px;
+		}
+
+		&::after {
+			top: 16px;
+			width: 21px;
+		}
+
+		span {
+			top: 10px;
+		}
+  }
 
 	@include mq($from: tablet-wide) {
 		display: none;
@@ -51,14 +70,27 @@
 	}
 
 	&::before {
+		top: 10px;
 		width: 17px;
-		margin-left: 15px;
+		margin-left: 16px;
 		transform: rotate(45deg);
 	}
 
 	&::after {
+		top: 10px;
 		width: 17px;
-		margin-left: 15px;
+		margin-left: 16px;
 		transform: rotate(-45deg);
 	}
+
+	@include mq($from: phablet) {
+		&::before {
+			width: 20px;
+		}
+
+		&::after {
+			top: 10px;
+			width: 20px;
+		}
+  }
 }
