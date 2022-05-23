@@ -7,14 +7,20 @@
 
 .menu__nav {
 	position: absolute;
-	top: 60px;
+	top: 65px;
 	transform: translateX(-700px);
 	transition: .5s all;
 	font-size: 22px;
-
+	
 	@include mq($from: phablet) {
 		top: 80px;
 		font-size: 24px;
+  }
+
+	@include mq($from: tablet-wide) {
+		position: relative;
+		top: 0;
+		transform: translateX(0);
   }
 }
 
@@ -23,38 +29,62 @@
 	background-color: #ffffff;
 	border-top: 1px solid #C4C4C4;
 	width: 100%;
+	height: 100vh;
 
 	@include mq($from: tablet) {
-    background-color: rgba(255,255,255,.7);;
+		width: 110vw;
+    background-color: #07222f9f;
   }
 }
 
 .menu__list {
 	width: 100vw;
+	margin: 0;
 	padding: 0;
 	font-weight: 500;
 	list-style: none;
 
-	li:first-child {
-		margin-top: 48px;
-	}
-
 	li {
 		margin-top: 30px;
+	}
+
+	li:first-child {
+		padding-top: 40px;
+		margin-top: 0;
 	}
 
 	a {
 		color: #263238; 
 	}
 
-	@include mq($from: phablet) {
+	@include mq($from: tablet-wide) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+
 		li:first-child {
-			margin-top: 35px;
+			padding-top: 0;
+		}
+
+		li {
+			margin-top: 0;
+			padding: 0;
 		}
   }
+}
 
-	@include mq($from: tablet) {
-    background-color: #ffffff;
-		width: 380px;
+.menu__inner {
+	width: 50vw;
+	height: 100vw;
+	background-color: #ffffff;
+
+	@include mq($from: tablet-wide) {
+		display: flex;
+		height: auto;
+		width: 100%;
   }
 }
