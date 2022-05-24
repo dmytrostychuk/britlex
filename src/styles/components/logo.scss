@@ -17,6 +17,9 @@
     font-size: 30px
   }
 
+	@include mq($from: tablet-wide) {
+  }
+
 	@include mq($from: desktop) {
     font-size: 36px
   }
