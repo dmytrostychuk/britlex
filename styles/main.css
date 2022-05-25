@@ -482,8 +482,17 @@ a:active {
   font-size: 24px;
   font-weight: 400;
 }
+.menu__logo a span {
+  transition: 0.5s;
+}
 .menu__logo a:hover {
-  opacity: 0.5;
+  opacity: 10;
+}
+.menu__logo a:hover .menu__logo-start {
+  color: #8F95A5;
+}
+.menu__logo a:hover .menu__logo-finish {
+  color: #000000;
 }
 .menu__logo a:active {
   opacity: 0.3;
@@ -711,6 +720,10 @@ a:active {
     top: 0;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .menu__nav-active {
+    height: auto;
+    border: none;
   }
   .menu__list {
     display: flex;
