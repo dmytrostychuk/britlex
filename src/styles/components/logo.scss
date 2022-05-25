@@ -3,9 +3,22 @@
 	font-size: 24px;
 	font-weight: 400;
 
+	
+
 	a {
+		span {
+			transition: .5s;
+		}
+
 		&:hover {
-			opacity: .5;
+			opacity: 10;
+			.menu__logo-start {
+				color: #8F95A5;
+			}
+
+			.menu__logo-finish {
+				color: #000000;
+			}
 		}
 
 		&:active {

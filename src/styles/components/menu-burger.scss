@@ -44,6 +44,11 @@
 		width: 110vw;
     background-color: #07222f9f;
   }
+
+	@include mq($from: tablet-wide) {
+		height: auto;
+		border: none;
+  }
 }
 
 .menu__list {
