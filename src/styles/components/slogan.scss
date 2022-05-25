@@ -1,0 +1,41 @@
+.slogan {
+}
+
+.slogan__content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 16px;
+
+	@include mq($from: phablet) {
+		margin-top: 17px;
+	}
+}
+
+.slogan__tittle {
+	margin: 0 35px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+
+	@include mq($from: phablet) {
+		margin: 0;
+		font-size: 34px;
+		line-height: 45px;
+	}
+}
+
+.slogan__text {
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	font-size: 14px;
+	line-height: 21px;
+	color: #8F95A5;
+
+	@include mq($from:phablet) {
+		margin-top: 26px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
