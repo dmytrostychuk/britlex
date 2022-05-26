@@ -1,4 +1,16 @@
 .slogan {
+	
+	@include mq($from: tablet) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+}
+
+.slogan__image {
+
+	@include mq($from: tablet) {
+	}
 }
 
 .slogan__content {
@@ -9,6 +21,12 @@
 
 	@include mq($from: phablet) {
 		margin-top: 17px;
+	}
+
+	@include mq ($from: tablet) {
+		width: 50vw;
+		margin-top: 50px;
+		margin-right: 30px;
 	}
 }
 
