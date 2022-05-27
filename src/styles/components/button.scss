@@ -1,5 +1,4 @@
 .button {
-  width: 100%;
   height: 60px;
   margin-top: 35px;
   background-color: #263238;
@@ -20,5 +19,9 @@
 
   @include mq($from: phablet) {
     margin-top: 37px;
+  }
+
+  @include mq($from: phablet) {
+    margin-top: 32px;
   }
 }
