@@ -681,15 +681,16 @@ a:active {
   color: #8F95A5;
 }
 
+.slogan__btn {
+  font-weight: 400;
+}
+
 @media (min-width: 575px) {
   .container {
     padding: 0 30px;
   }
   .button {
     margin-top: 37px;
-  }
-  .button {
-    margin-top: 32px;
   }
   .menu__logo {
     font-size: 30px;
@@ -873,6 +874,13 @@ a:active {
   .slogan__btn {
     width: 292px;
   }
+  .slogan__btn {
+    margin-top: 60px;
+    width: 438px;
+    height: 118px;
+    font-size: 36px;
+    line-height: 54px;
+  }
 }
 
 @media (min-width: 1338px) {
@@ -892,5 +900,24 @@ a:active {
     width: 220px;
     height: 70px;
     font-size: 24px;
+  }
+  .slogan {
+    margin-top: 50px;
+  }
+  .slogan__content {
+    margin-top: 40px;
+  }
+  .slogan__tittle {
+    width: 490px;
+    font-size: 64px;
+    line-height: 80px;
+  }
+  .slogan__light-bulb {
+    width: 85px;
+  }
+  .slogan__text {
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 36px;
   }
 }

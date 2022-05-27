@@ -21,9 +21,4 @@
   @include mq($from: phablet) {
     margin-top: 37px;
   }
-
-  @include mq($from: phablet) {
-    margin-top: 32px;
-  }
-
 }
