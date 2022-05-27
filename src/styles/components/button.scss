@@ -1,6 +1,7 @@
 .button {
   height: 60px;
   margin-top: 35px;
+  padding: 0;
   background-color: #263238;
   color: #FFFFFF;
   border-radius: 5px;
@@ -24,4 +25,5 @@
   @include mq($from: phablet) {
     margin-top: 32px;
   }
+
 }
