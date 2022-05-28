@@ -135,6 +135,8 @@
 	height: 60px;
 
 	@include mq($from: phablet) {
+		width: 305px;
+		margin: 0 auto;
     margin-top: 37px;
   }
 
