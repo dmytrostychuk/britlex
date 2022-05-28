@@ -439,7 +439,7 @@ body {
 }
 
 .header {
-  margin-bottom: 51px;
+  margin-bottom: 80px;
 }
 
 .container {
@@ -691,21 +691,25 @@ a:active {
 }
 
 .section__title {
+  margin-bottom: 60px;
   font-size: 24px;
   font-weight: 600;
   margin-top: 0;
-}
-
-.section__card {
-  background-color: #F5F5F5;
-  border-radius: 5px;
+  text-align: center;
 }
 
 .section__content {
   padding: 0 15px;
+  margin-bottom: 20px;
 }
 
-.section__title {
+.section__card {
+  position: relative;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+.section__content-title {
   font-size: 18px;
   margin-top: 30px;
 }
@@ -791,13 +795,39 @@ a:active {
     line-height: 24px;
   }
   .slogan__btn {
+    width: 305px;
+    margin: 0 auto;
     margin-top: 37px;
   }
   .section__title {
     font-size: 30px;
   }
-  .section__title {
-    margin-top: 10px;
+  .section__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .section__card {
+    min-height: 570px;
+    width: 49%;
+    margin-bottom: 34px;
+  }
+  .section__content-title {
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+  .section__text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .section__text:nth-child(3) {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  .section__btn {
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
   }
 }
 
@@ -873,7 +903,7 @@ a:active {
   .section__content {
     padding: 0 17px;
   }
-  .section__title {
+  .section__content-title {
     font-size: 20px;
   }
 }
@@ -966,7 +996,7 @@ a:active {
   .section__content {
     padding: 0 30px;
   }
-  .section__title {
+  .section__content-title {
     font-size: 22px;
   }
 }
@@ -1027,7 +1057,7 @@ a:active {
   .section__content {
     padding: 0 43px;
   }
-  .section__title {
+  .section__content-title {
     font-size: 30px;
   }
 }
