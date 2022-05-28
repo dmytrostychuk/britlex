@@ -25,8 +25,7 @@
 	}
 }
 
-.section__content {
-	padding: 0 15px;
+.section__container {
 	margin-bottom: 20px;
 
 	@include mq($from: phablet) {
@@ -36,15 +35,15 @@
 	}
 
 	@include mq($from: tablet) {
-		padding: 0 17px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
 	}
 
 	@include mq($from: tablet-wide) {
-		padding: 0 30px;
 	}
 
 	@include mq($from: desktop) {
-		padding: 0 43px;
 	}
 }
 
@@ -58,6 +57,54 @@
 		width: 49%;
 		margin-bottom: 34px;
 	}
+
+	@include mq($from: tablet) {
+		min-height: auto;
+		width: auto;
+		margin-bottom: 0;
+
+		&:nth-child(1) {
+			min-height: 670px;
+			grid-row-start: 1;
+			grid-row-end: 3;
+		}
+
+		&:nth-child(2) {
+			min-height: 410px;
+		}
+
+		&:nth-child(4) {
+			display: flex;
+			flex-direction: row-reverse;
+			grid-column-start: 2;
+			grid-column-end: 4;
+		}
+	}
+}
+
+.section__content {
+	padding: 0 15px;
+	margin-bottom: 20px;
+
+	@include mq($from: phablet) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	@include mq($from: tablet) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	@include mq($from: tablet-wide) {
+		padding: 0 30px;
+	}
+
+	@include mq($from: desktop) {
+		padding: 0 43px;
+	}
 }
 
 .section__content-title {
@@ -70,8 +117,8 @@
 	}
 
 	@include mq($from: tablet) {
-		
 		font-size: 20px;
+		line-height: 21px;
 	}
 
 	@include mq($from: tablet-wide) {
@@ -103,6 +150,10 @@
 				padding-bottom: 40px;
 		}
 	}
+
+	@include mq($from: tablet) {
+		font-size: 13px;
+	}
 }
 
 .section__btn {
@@ -116,4 +167,21 @@
 		bottom: 20px;
 		margin: 0;
 	}
+
+	@include mq($from: tablet) {
+		position: relative;
+		bottom: 0;
+		font-size: 16px;
+	}
+}
+
+.section__img {
+	width: 200px;
+}
+
+.section__content--listening {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	width: 350px;
 }
