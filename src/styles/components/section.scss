@@ -1,5 +1,4 @@
-.section {
-}
+
 
 .section__title {
 	margin-bottom: 60px;
@@ -78,6 +77,19 @@
 			flex-direction: row-reverse;
 			grid-column-start: 2;
 			grid-column-end: 4;
+		}
+	}
+
+	@include mq($from: tablet) {
+
+		&:nth-child(1) {
+			min-height: 700px;
+		}
+
+		&:nth-child(2) {
+		}
+
+		&:nth-child(4) {
 		}
 	}
 }

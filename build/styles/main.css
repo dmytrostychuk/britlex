@@ -944,6 +944,9 @@ a:active {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+  .section__card:nth-child(1) {
+    min-height: 700px;
+  }
   .section__content {
     position: absolute;
     bottom: 0;
