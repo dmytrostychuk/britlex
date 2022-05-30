@@ -80,13 +80,14 @@
 		}
 	}
 
-	@include mq($from: tablet) {
+	@include mq($from: tablet-wide) {
 
 		&:nth-child(1) {
 			min-height: 700px;
 		}
 
 		&:nth-child(2) {
+			min-height: 440px;
 		}
 
 		&:nth-child(4) {
@@ -166,6 +167,11 @@
 	@include mq($from: tablet) {
 		font-size: 13px;
 	}
+
+	@include mq($from: tablet-wide) {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
 }
 
 .section__btn {
@@ -185,6 +191,11 @@
 		bottom: 0;
 		font-size: 16px;
 	}
+
+	@include mq($from: tablet-wide) {
+		height: 57px;
+		font-size: 18px;
+	}
 }
 
 .section__img {
@@ -195,5 +206,5 @@
 	position: absolute;
 	left: 0;
 	top: 20px;
-	width: 350px;
+	width: 250px;
 }

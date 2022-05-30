@@ -743,7 +743,7 @@ a:active {
   position: absolute;
   left: 0;
   top: 20px;
-  width: 350px;
+  width: 250px;
 }
 
 @media (min-width: 575px) {
@@ -944,9 +944,6 @@ a:active {
     grid-column-start: 2;
     grid-column-end: 4;
   }
-  .section__card:nth-child(1) {
-    min-height: 700px;
-  }
   .section__content {
     position: absolute;
     bottom: 0;
@@ -1051,11 +1048,25 @@ a:active {
   .section__title {
     font-size: 36px;
   }
+  .section__card:nth-child(1) {
+    min-height: 700px;
+  }
+  .section__card:nth-child(2) {
+    min-height: 440px;
+  }
   .section__content {
     padding: 0 30px;
   }
   .section__content-title {
     font-size: 22px;
+  }
+  .section__text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .section__btn {
+    height: 57px;
+    font-size: 18px;
   }
 }
 
