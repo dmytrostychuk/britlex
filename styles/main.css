@@ -701,6 +701,7 @@ a:active {
 .section__container {
   margin-bottom: 20px;
 }
+
 .section__card {
   position: relative;
   background-color: #F5F5F5;
@@ -1065,6 +1066,16 @@ a:active {
   .section__card:nth-child(4) {
     height: 250px;
   }
+  .section__card:nth-child(1) {
+    min-height: 900px;
+    width: 435px;
+  }
+  .section__card:nth-child(2) {
+    height: 530px;
+  }
+  .section__card:nth-child(4) {
+    height: 350px;
+  }
   .section__content {
     padding: 0 30px;
   }
@@ -1156,10 +1167,16 @@ a:active {
   .section__title {
     font-size: 48px;
   }
+  .section__container {
+    grid-gap: 20px;
+  }
   .section__content {
     padding: 0 43px;
   }
   .section__content-title {
     font-size: 30px;
+  }
+  .section__text {
+    font-size: 16px;
   }
 }
