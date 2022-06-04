@@ -737,6 +737,33 @@ a:active {
   margin-bottom: 45px;
 }
 
+.about {
+  position: relative;
+}
+
+.about__text {
+  text-align: center;
+}
+
+.about__stat-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about__stat-number {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2A3246;
+}
+
+.about__stat-text {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #8F95A5;
+}
+
 @media (min-width: 575px) {
   .header {
     margin-bottom: 95px;
@@ -840,6 +867,21 @@ a:active {
     bottom: 20px;
     margin: 0;
   }
+  .about__img {
+    margin: 0 100px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about__stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+  }
+  .about__stat-text {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -916,6 +958,7 @@ a:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    margin-bottom: 55px;
   }
   .skills__card {
     min-height: auto;
@@ -966,6 +1009,37 @@ a:active {
   .skills__btn {
     bottom: 0;
     font-size: 16px;
+  }
+  .about__title {
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .about__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    margin: 0;
+  }
+  .about__content {
+    width: 53%;
+  }
+  .about__text {
+    font-size: 14px;
+    text-align: start;
+  }
+  .about__stat {
+    margin: 0;
+    justify-content: space-between;
+  }
+  .about__stat-container {
+    margin-top: 10px;
+  }
+  .about__stat-number {
+    font-size: 22px;
+  }
+  .about__stat-text {
+    font-size: 13px;
   }
 }
 
@@ -1093,6 +1167,22 @@ a:active {
     height: 57px;
     font-size: 18px;
   }
+  .about__title {
+    margin-bottom: 40px;
+  }
+  .about__img {
+    width: 320px;
+  }
+  .about__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about__stat-number {
+    font-size: 30px;
+  }
+  .about__stat-text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1338px) {
@@ -1103,7 +1193,7 @@ a:active {
     padding: 0 131px;
   }
   .section {
-    margin-bottom: 282px;
+    margin-bottom: 150px;
   }
   .menu__logo {
     font-size: 36px;
@@ -1176,6 +1266,7 @@ a:active {
   .skills__text {
     margin-top: 30px;
     margin-bottom: 130px;
+    line-height: 24px;
   }
   .skills__listening-img {
     width: 50%;
@@ -1184,5 +1275,20 @@ a:active {
     height: 60px;
     font-size: 20px;
     bottom: 40px;
+  }
+  .about__img {
+    width: 420px;
+  }
+  .about__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .about__stat-number {
+    font-size: 48px;
+  }
+  .about__stat-text {
+    font-size: 20px;
+    margin-top: 15px;
   }
 }
