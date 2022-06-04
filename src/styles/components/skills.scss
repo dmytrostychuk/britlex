@@ -11,6 +11,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 10px;
+		margin-bottom: 55px;
 	}
 
 	@include mq($from: desktop) {
@@ -170,6 +171,7 @@
 	@include mq($from: desktop) {
 		margin-top: 30px;
 		margin-bottom: 130px;
+		line-height: 24px;
 	}
 }
 
