@@ -449,7 +449,7 @@ body {
 }
 
 .section {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .section--no-margin {
   margin-bottom: 0;
@@ -691,7 +691,7 @@ a:active {
 }
 
 .section__title {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-size: 24px;
   font-weight: 600;
   margin-top: 0;
@@ -764,6 +764,52 @@ a:active {
   color: #8F95A5;
 }
 
+.pricing {
+  text-align: center;
+}
+
+.pricing__card {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 350px;
+}
+
+.pricing__title {
+  font-size: 18px;
+}
+
+.pricing__text {
+  font-size: 13px;
+}
+
+.pricing__button {
+  font-size: 14px;
+  color: #546269;
+  width: 170px;
+  height: 40px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.pricing__button:hover {
+  color: #eeeeee;
+  background-color: #263238;
+}
+.pricing__button:hover span {
+  color: #eeeeee;
+}
+.pricing__button:active {
+  opacity: 0.5;
+}
+.pricing__button-span {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #263238;
+  vertical-align: middle;
+  transition: 0.5s;
+}
 @media (min-width: 575px) {
   .header {
     margin-bottom: 95px;
@@ -882,8 +928,21 @@ a:active {
   .about__stat-text {
     font-size: 14px;
   }
+  .pricing__card {
+    max-width: 400px;
+  }
+  .pricing__img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .pricing__title {
+    font-size: 24px;
+  }
+  .pricing__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
-
 @media (min-width: 768px) {
   .header {
     margin-bottom: 55px;
@@ -1041,8 +1100,10 @@ a:active {
   .about__stat-text {
     font-size: 13px;
   }
+  .pricing__title {
+    font-size: 20px;
+  }
 }
-
 @media (min-width: 992px) {
   .header {
     margin-bottom: 72px;
@@ -1183,8 +1244,14 @@ a:active {
   .about__stat-text {
     font-size: 16px;
   }
+  .pricing__title {
+    font-size: 22px;
+  }
+  .pricing__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
-
 @media (min-width: 1338px) {
   .header {
     margin-bottom: 147px;
@@ -1290,5 +1357,12 @@ a:active {
   .about__stat-text {
     font-size: 20px;
     margin-top: 15px;
+  }
+  .pricing__title {
+    font-size: 48px;
+  }
+  .pricing__text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
