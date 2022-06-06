@@ -4,6 +4,9 @@
 
 .pricing__container {
 
+	@include mq($from: tablet) {
+		display: flex;
+	}
 }
 
 .pricing__card {
@@ -14,14 +17,23 @@
 	@include mq($from: phablet) {
 		max-width: 400px;
 	}
+
+	@include mq($from: tablet) {
+		width: 30%;
+	}
 }
 
 .pricing__img {
-	
+	max-width: 300px;
+	margin: auto;
 	
 	@include mq($from: phablet) {
 		max-width: 400px;
 		margin: 0 auto;
+	}
+
+	@include mq($from: tablet) {
+		height: 250px;
 	}
 }
 

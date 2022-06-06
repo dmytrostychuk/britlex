@@ -774,6 +774,11 @@ a:active {
   max-width: 350px;
 }
 
+.pricing__img {
+  max-width: 300px;
+  margin: auto;
+}
+
 .pricing__title {
   font-size: 18px;
 }
@@ -1099,6 +1104,15 @@ a:active {
   }
   .about__stat-text {
     font-size: 13px;
+  }
+  .pricing__container {
+    display: flex;
+  }
+  .pricing__card {
+    width: 30%;
+  }
+  .pricing__img {
+    height: 250px;
   }
   .pricing__title {
     font-size: 20px;
