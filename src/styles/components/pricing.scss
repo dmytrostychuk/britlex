@@ -10,6 +10,7 @@
 }
 
 .pricing__card {
+	position: relative;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	max-width: 350px;
@@ -19,6 +20,7 @@
 	}
 
 	@include mq($from: tablet) {
+		min-height: 450px;
 		width: 30%;
 	}
 }
@@ -26,6 +28,7 @@
 .pricing__img {
 	max-width: 300px;
 	margin: auto;
+	position: relative;
 	
 	@include mq($from: phablet) {
 		max-width: 400px;
@@ -33,12 +36,23 @@
 	}
 
 	@include mq($from: tablet) {
-		height: 250px;
+		height: 210px;
 	}
 }
 
-.pricing__content {
+.lesson-img {
 
+	@include mq($from: tablet) {
+		position: absolute;
+	bottom: 0;
+	right: 50%;
+	transform: translate(50%);
+	}
+	
+}
+
+.pricing__content {
+position: relative;
 }
 
 .pricing__title {
@@ -105,11 +119,15 @@
 	}
 
 	@include mq($from: phablet) {
-
+		width: 205px;
+		height: 45px;
 	}
 
 	@include mq($from: tablet) {
-		
+		position: absolute;
+		bottom:  0;
+		right: 50%;
+		transform: translate(50%);
 	}
 
 	@include mq($from: tablet-wide) {
