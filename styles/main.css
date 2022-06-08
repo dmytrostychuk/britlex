@@ -1124,6 +1124,7 @@ a:active {
   }
   .pricing__img {
     height: 210px;
+    width: 214px;
   }
   .lesson-img {
     position: absolute;
@@ -1134,6 +1135,9 @@ a:active {
   }
   .pricing__title {
     font-size: 20px;
+  }
+  .pricing__text {
+    position: absolute;
   }
   .pricing__button {
     position: absolute;
