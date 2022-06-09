@@ -1134,7 +1134,12 @@ a:active {
             transform: translate(50%);
   }
   .pricing__title {
+    width: 150px;
+    margin: 20px auto;
     font-size: 20px;
+  }
+  .pricing__title-width {
+    width: 200px;
   }
   .pricing__text {
     position: absolute;

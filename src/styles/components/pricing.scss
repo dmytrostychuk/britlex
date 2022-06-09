@@ -66,6 +66,8 @@ position: relative;
 	}
 
 	@include mq($from: tablet) {
+		width: 150px;
+		margin: 20px auto;
 		font-size: 20px;
 	}
 
@@ -75,6 +77,13 @@ position: relative;
 
 	@include mq($from: desktop) {
 		font-size: 48px;
+	}
+}
+
+.pricing__title-width {
+
+	@include mq($from: tablet) {
+		width: 200px;
 	}
 }
 
