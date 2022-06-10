@@ -40,7 +40,10 @@
 		width: 214px;
 	}
 
-	
+	@include mq($from: tablet-wide) {
+		width: auto;
+		height: auto;
+	}
 }
 
 .lesson-img {
@@ -50,6 +53,10 @@
 	bottom: 0;
 	right: 50%;
 	transform: translate(50%);
+	}
+
+	@include mq($from: tablet-wide) {
+		
 	}
 	
 }
