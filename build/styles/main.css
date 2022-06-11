@@ -780,6 +780,7 @@ a:active {
   margin: auto;
   position: relative;
 }
+
 .pricing__content {
   position: relative;
 }
@@ -1294,6 +1295,10 @@ a:active {
   .pricing__img {
     width: auto;
     height: auto;
+  }
+  .lesson-img {
+    position: relative;
+    bottom: -50px;
   }
   .pricing__title {
     font-size: 22px;

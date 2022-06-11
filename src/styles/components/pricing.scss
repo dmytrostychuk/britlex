@@ -56,7 +56,8 @@
 	}
 
 	@include mq($from: tablet-wide) {
-		
+		position: relative;
+		bottom: -50px;
 	}
 	
 }
