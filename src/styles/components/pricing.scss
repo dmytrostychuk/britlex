@@ -1,18 +1,23 @@
 .pricing {
 	text-align:center;
+
+	@include mq($from: tablet) {
+		text-align: start;
+	}
 }
 
 .pricing__container {
 
 	@include mq($from: tablet) {
 		display: flex;
+		justify-content: space-between;
 	}
 }
 
 .pricing__card {
 	position: relative;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	max-width: 350px;
 
 	@include mq($from: phablet) {
@@ -20,8 +25,13 @@
 	}
 
 	@include mq($from: tablet) {
-		min-height: 450px;
+		min-height: 480px;
 		width: 30%;
+		margin: 0;
+	}
+
+	@include mq($from: tablet-wide) {
+		min-height: 550px;
 	}
 }
 
@@ -36,13 +46,13 @@
 	}
 
 	@include mq($from: tablet) {
-		height: 210px;
-		width: 214px;
+		height: 25vw;
+		width: 25vw;
 	}
 
 	@include mq($from: tablet-wide) {
-		width: auto;
-		height: auto;
+		height: 280px;
+		width: 280px;
 	}
 }
 
@@ -56,14 +66,17 @@
 	}
 
 	@include mq($from: tablet-wide) {
-		position: relative;
-		bottom: -50px;
+
 	}
 	
 }
 
 .pricing__content {
 position: relative;
+
+@include mq($from: tablet) {
+	padding: 0 10px;
+}
 }
 
 .pricing__title {
@@ -75,7 +88,6 @@ position: relative;
 
 	@include mq($from: tablet) {
 		width: 150px;
-		margin: 20px auto;
 		font-size: 20px;
 	}
 
@@ -151,8 +163,8 @@ position: relative;
 	@include mq($from: tablet) {
 		position: absolute;
 		bottom:  0;
-		right: 50%;
-		transform: translate(50%);
+		width: 25vw;
+		margin: 0 10px;
 	}
 
 	@include mq($from: tablet-wide) {

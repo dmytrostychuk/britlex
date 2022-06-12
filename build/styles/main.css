@@ -771,7 +771,7 @@ a:active {
 .pricing__card {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   max-width: 350px;
 }
 
@@ -780,7 +780,6 @@ a:active {
   margin: auto;
   position: relative;
 }
-
 .pricing__content {
   position: relative;
 }
@@ -1115,16 +1114,21 @@ a:active {
   .about__stat-text {
     font-size: 13px;
   }
+  .pricing {
+    text-align: start;
+  }
   .pricing__container {
     display: flex;
+    justify-content: space-between;
   }
   .pricing__card {
-    min-height: 450px;
+    min-height: 480px;
     width: 30%;
+    margin: 0;
   }
   .pricing__img {
-    height: 210px;
-    width: 214px;
+    height: 25vw;
+    width: 25vw;
   }
   .lesson-img {
     position: absolute;
@@ -1133,9 +1137,11 @@ a:active {
     -webkit-transform: translate(50%);
             transform: translate(50%);
   }
+  .pricing__content {
+    padding: 0 10px;
+  }
   .pricing__title {
     width: 150px;
-    margin: 20px auto;
     font-size: 20px;
   }
   .pricing__title-width {
@@ -1147,9 +1153,8 @@ a:active {
   .pricing__button {
     position: absolute;
     bottom: 0;
-    right: 50%;
-    -webkit-transform: translate(50%);
-            transform: translate(50%);
+    width: 25vw;
+    margin: 0 10px;
   }
 }
 @media (min-width: 992px) {
@@ -1292,13 +1297,12 @@ a:active {
   .about__stat-text {
     font-size: 16px;
   }
-  .pricing__img {
-    width: auto;
-    height: auto;
+  .pricing__card {
+    min-height: 550px;
   }
-  .lesson-img {
-    position: relative;
-    bottom: -50px;
+  .pricing__img {
+    height: 280px;
+    width: 280px;
   }
   .pricing__title {
     font-size: 22px;
