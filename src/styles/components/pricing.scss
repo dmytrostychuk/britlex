@@ -31,7 +31,11 @@
 	}
 
 	@include mq($from: tablet-wide) {
-		min-height: 550px;
+		min-height: 555px;
+	}
+
+	@include mq($from: desktop) {
+		height: 700px;
 	}
 }
 
@@ -50,9 +54,8 @@
 		width: 25vw;
 	}
 
-	@include mq($from: tablet-wide) {
-		height: 280px;
-		width: 280px;
+	@include mq($from: desktop) {
+		max-height: 400px;
 	}
 }
 
@@ -72,11 +75,19 @@
 }
 
 .pricing__content {
-position: relative;
+	position: relative;
 
-@include mq($from: tablet) {
-	padding: 0 10px;
-}
+	@include mq($from: tablet) {
+		padding: 0 10px;
+	}
+
+	@include mq($from: tablet-wide) {
+		padding: 0 20px;
+	}
+
+	@include mq($from: desktop) {
+		padding: 0;
+	}
 }
 
 .pricing__title {
@@ -92,11 +103,12 @@ position: relative;
 	}
 
 	@include mq($from: tablet-wide) {
+		width: 100%;
 		font-size: 22px;
 	}
 
 	@include mq($from: desktop) {
-		font-size: 48px;
+		font-size: 30px;
 	}
 }
 
@@ -104,6 +116,10 @@ position: relative;
 
 	@include mq($from: tablet) {
 		width: 200px;
+	}
+
+	@include mq($from: tablet-wide) {
+		width: 100%;
 	}
 }
 
@@ -158,6 +174,7 @@ position: relative;
 	@include mq($from: phablet) {
 		width: 205px;
 		height: 45px;
+		font-size: 16px;
 	}
 
 	@include mq($from: tablet) {
@@ -168,11 +185,15 @@ position: relative;
 	}
 
 	@include mq($from: tablet-wide) {
-		
+		width: 205px;
+		margin: 0 20px;
 	}
 
 	@include mq($from: desktop) {
-		
+		width: 240px;
+		height: 50px;
+		margin: 0;
+		font-size: 18px;
 	}
 }
 
@@ -184,11 +205,11 @@ position: relative;
 	transition: .5s; 
 
 	@include mq($from: phablet) {
-
+		font-size: 24px;
 	}
 
 	@include mq($from: tablet) {
-		
+		font-size: 22px;
 	}
 
 	@include mq($from: tablet-wide) {
@@ -196,6 +217,6 @@ position: relative;
 	}
 
 	@include mq($from: desktop) {
-		
+		font-size: 30px;
 	}
 }

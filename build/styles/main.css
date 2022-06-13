@@ -813,6 +813,7 @@ a:active {
 .pricing__button:active {
   opacity: 0.5;
 }
+
 .pricing__button-span {
   margin-right: 10px;
   font-size: 18px;
@@ -820,6 +821,7 @@ a:active {
   vertical-align: middle;
   transition: 0.5s;
 }
+
 @media (min-width: 575px) {
   .header {
     margin-bottom: 95px;
@@ -955,8 +957,13 @@ a:active {
   .pricing__button {
     width: 205px;
     height: 45px;
+    font-size: 16px;
+  }
+  .pricing__button-span {
+    font-size: 24px;
   }
 }
+
 @media (min-width: 768px) {
   .header {
     margin-bottom: 55px;
@@ -1156,7 +1163,11 @@ a:active {
     width: 25vw;
     margin: 0 10px;
   }
+  .pricing__button-span {
+    font-size: 22px;
+  }
 }
+
 @media (min-width: 992px) {
   .header {
     margin-bottom: 72px;
@@ -1298,20 +1309,28 @@ a:active {
     font-size: 16px;
   }
   .pricing__card {
-    min-height: 550px;
+    min-height: 555px;
   }
-  .pricing__img {
-    height: 280px;
-    width: 280px;
+  .pricing__content {
+    padding: 0 20px;
   }
   .pricing__title {
+    width: 100%;
     font-size: 22px;
+  }
+  .pricing__title-width {
+    width: 100%;
   }
   .pricing__text {
     font-size: 16px;
     line-height: 24px;
   }
+  .pricing__button {
+    width: 205px;
+    margin: 0 20px;
+  }
 }
+
 @media (min-width: 1338px) {
   .header {
     margin-bottom: 147px;
@@ -1418,11 +1437,29 @@ a:active {
     font-size: 20px;
     margin-top: 15px;
   }
+  .pricing__card {
+    height: 700px;
+  }
+  .pricing__img {
+    max-height: 400px;
+  }
+  .pricing__content {
+    padding: 0;
+  }
   .pricing__title {
-    font-size: 48px;
+    font-size: 30px;
   }
   .pricing__text {
     font-size: 20px;
     line-height: 30px;
+  }
+  .pricing__button {
+    width: 240px;
+    height: 50px;
+    margin: 0;
+    font-size: 18px;
+  }
+  .pricing__button-span {
+    font-size: 30px;
   }
 }
