@@ -17,7 +17,7 @@
 .pricing__card {
 	position: relative;
 	margin: 0 auto;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	max-width: 350px;
 
 	@include mq($from: phablet) {
