@@ -60,7 +60,7 @@ body {
   }
 
   @include mq($from: tablet) {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 
   @include mq($from: tablet-wide) {

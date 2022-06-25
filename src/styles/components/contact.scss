@@ -1,4 +1,29 @@
 .contact {
+	position: relative;
+
+	@include mq($from: tablet) {
+		display: flex;
+	}
+
+	@include mq($from: tablet-wide) {
+		max-height: 300px;
+	}
+}
+
+.contact__title {
+	@include mq($from: tablet) {
+		position: absolute;
+		left: 36%;
+	}
+
+	@include mq($from: tablet-wide) {
+		left: 34%;
+	}
+
+	@include mq($from: desktop) {
+		left: 36%;
+		margin-bottom: 50px;
+	}
 }
 
 .contact__img {
@@ -8,12 +33,65 @@
 	@include mq($from: phablet) {
 		width: 60vw;
 	}
+
+	@include mq($from: tablet) {
+		width: 440px;
+	}
+
+	@include mq($from: tablet-wide) {
+		width: 450px;
+	}
+
+	@include mq($from: desktop) {
+		width: 600px;
+	}
+}
+
+.contact__container {
+
+	@include mq($from: tablet) {
+		margin-left: 5vw;
+	margin-top: 40px;
+	}
+	
+
+	@include mq($from: tablet-wide) {
+	margin-top: 50px;
+	}
 }
 
 .contact__content {
 	margin: 0 auto;
 
-	@include mq($from: phablet) {
-		width: 60vw;
+	@include mq($from: tablet) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.contact__text {
+	
+
+	@include mq($from:phablet) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	@include mq($from:tablet) {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	@include mq($from:tablet-wide) {
+		width: 70%;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+	@include mq($from:desktop) {
+		width: 100%;
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 50px;
 	}
 }

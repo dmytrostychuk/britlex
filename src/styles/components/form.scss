@@ -1,33 +1,81 @@
 .form {
-width: 100%;
+position: relative;
+
+	@include mq($from:tablet) {
+		display: flex;
+	}
 }
 
 input {
+	width: 100%;
+
 	transition: 0.5s;
 }
 
 .form__input {
-	width: 90%;
-	padding: 0 40px;
+	margin: 0;
+	padding: 0 30px;
+	box-sizing: border-box;
 	height: 50px;
-	border: 1px solid #8F95A5;
+	border: none;
+	outline: 1px solid #8F95A5;
 	border-radius: 5px;
 	margin-bottom: 15px;
 	transition: .5s all;
+	
 
 	&::placeholder {
-		padding-left: 40px;
 		color: #8F95A5;
 	}
 
 	&:focus {
 		outline:none;
-		outline: 1px solid #263238;
+		outline: 1px solid #eee;
 		transition: 0.5s;
+	}
+
+	@include mq($from:phablet) {
+		height: 58px;
+		width: 61%;
+	}
+
+	@include mq($from:tablet) {
+		height: 48px;
+	}
+
+	@include mq($from:tablet-wide) {
+		height: 58px;
+	}
+
+	@include mq($from:desktop) {
+		height: 79px;
 	}
 }
 
 .form__btn {
 	width: 100%;
 	height: 60px;
+
+	@include mq($from:phablet) {
+		position: absolute;
+		right: 0;
+		top: -1px;
+		width: 40%;
+		height: 60px;
+	}
+
+	@include mq($from:tablet) {
+		position: relative;
+		margin-left: 10px;
+		height: 50px;
+	}
+
+	@include mq($from:tablet-wide) {
+		height: 60px;
+	}
+
+	@include mq($from:desktop) {
+		height: 80px;
+		margin-left: 20px;
+	}
 }

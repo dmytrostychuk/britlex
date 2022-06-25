@@ -92,6 +92,7 @@
 
 .pricing__title {
 	font-size: 18px;
+	margin-top: 0;
 
 	@include mq($from: phablet) {
 		font-size: 24px;
