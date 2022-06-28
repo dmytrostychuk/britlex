@@ -1,0 +1,52 @@
+
+.footer {
+	margin-bottom: 50px;
+}
+
+.footer__inner {
+	border-top: 1px solid #C4C4C4;
+}
+
+.footer__content {
+	text-align: center;
+	align-items: center;
+
+	@include mq($from: phablet) {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+}
+
+.footer-logo {
+	margin-top: 50px;
+	vertical-align: middle;
+
+	@include mq($from: phablet) {
+		margin: 0;
+	}
+}
+
+.footer-text {
+	font-size: 11px;
+	
+	a {
+		color: #8F95A5;
+	}
+
+	@include mq($from: phablet) {
+		font-size: 12px;
+	}
+
+	@include mq($from: tablet) {
+		font-size: 13px;
+	}
+
+	@include mq($from: tablet-wide) {
+		font-size: 16px;
+	}
+
+	@include mq($from: desktop) {
+		font-size: 24px;
+	}
+}
