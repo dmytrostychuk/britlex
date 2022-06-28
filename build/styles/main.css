@@ -438,6 +438,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   margin-bottom: 80px;
 }
