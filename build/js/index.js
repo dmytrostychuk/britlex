@@ -45,7 +45,6 @@ function toggleModal() {
   modal.classList.toggle('show-modal');
 
   if (menuNav) {
-    document.body.classList.toggle('lock');
     menuNav.classList.remove('menu__nav-active');
     burgerBth.classList.remove('burger-bth-active');
     menuBtn.classList.remove('menu__btn-active');
@@ -54,6 +53,7 @@ function toggleModal() {
 
 function windowOnClick(event) {
   if (event.target === modal) {
+    document.body.classList.remove('lock');
     toggleModal();
   }
 }
