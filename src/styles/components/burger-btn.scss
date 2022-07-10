@@ -2,12 +2,19 @@
 	position: relative;
 	width: 33px;
 	height: 20px;
+	padding: 0;
+	margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
 	&::before,
 	&::after,
 	span {
 		content: "";
 		position: absolute;
+		left: 0;
+		top: 0;
 		height: 3px;
 		width: 33px;
 		background-color: #39515E;
@@ -38,6 +45,7 @@
 	@include mq($from: phablet) {
 		width: 42px;
 		height: 24px;
+		right: 0;
 		
 		&::before,
 		&::after,

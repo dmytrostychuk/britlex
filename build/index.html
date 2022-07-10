@@ -16,7 +16,7 @@
         <h1 class="menu__logo">
           <a href="#"><span class="menu__logo-start">Brit</span><span class="menu__logo-finish">lex</span></a>
         </h1>
-        <a class="burger-bth" href="#"><span></span></a>
+        <button class="burger-bth" href="#"><span></span></button>
         <nav class="menu__nav">
           <div class="menu__inner">
             <ul class="menu__list">
@@ -251,12 +251,66 @@
   </footer>
 
   <div class="modal">
-    <div class="modal-content">
-      <span class="close-button"></span>
-      <form class="form" name="test" method="post">
-        <input class="form__input" type="phone" placeholder="Enter Your phone">
-        <input class="button form__btn" type="submit" value="Subscribe">
-      </form>
+    <div class="modal__inner">
+      <div class="modal-content">
+        <span class="close-button"></span>
+        <h1 class="menu__logo modal-logo">
+          <a href="#"><span class="menu__logo-start">Brit</span><span class="menu__logo-finish">lex</span></a>
+        </h1>
+        <form class="form" name="test" method="post">
+          <div class="form__block ">
+            <label for="form__name">Name:</label>
+            <input class="form__input" id="form__name" type="name" placeholder="Dima*">
+          </div>
+          <div class="form__block">
+            <label for="form__email">E-mail:</label>
+            <input class="form__input" id="form__email" type="email" placeholder="exampl@email.com">
+          </div>
+          <div class="form__block">
+            <label for="form__number">Number:</label>
+            <input class="form__input" id="form__number" type="phone" placeholder="+3809999999">
+          </div>
+
+          <div class="form__block">
+            <p class="form__block-title skills__content-title">How to contact you?</p>
+            <div class="chain">
+              <label class="chain__lable ">
+                <input class="chain__checkbox" type="radio" name="contact">
+                <span class="chain__text"><img src="img/telephone-call.png" alt="" width="20" height="20"></span>
+              </label>
+
+              <label class="chain__lable">
+                <input class="chain__checkbox" type="radio" name="contact" checked>
+                <span class="chain__text"><img src="img/telegram.png" alt="" width="20" height="20"></span>
+              </label>
+
+              <label class="chain__lable ">
+                <input class="chain__checkbox" type="radio" name="contact">
+                <span class="chain__text"><img src="img/whatsapp.png" alt="" width="20" height="20"></span>
+              </label>
+
+              <label class="chain__lable ">
+                <input class="chain__checkbox" type="radio" name="contact">
+                <span class="chain__text"><img src="img/linkedin.png" alt="" width="20" height="20"></span>
+              </label>
+
+              <label class="chain__lable ">
+                <input class="chain__checkbox" type="radio" name="contact">
+                <span class="chain__text"><img src="img/facebook.png" alt="" width="20" height="20"></span>
+              </label>
+
+              <label class="chain__lable ">
+                <input class="chain__checkbox" type="radio" name="contact">
+                <span class="chain__text"><img src="img/mail.png" alt="" width="20" height="20"></span>
+              </label>
+
+
+            </div>
+
+          </div>
+          <input class="button form__btn" type="submit" value="Subscribe">
+        </form>
+      </div>
     </div>
   </div>
 

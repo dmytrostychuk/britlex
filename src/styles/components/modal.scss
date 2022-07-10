@@ -11,20 +11,122 @@
 	transform: scale(1.1);
 	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 	}
+
+	.modal__inner {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+		width: 90%;
+		margin-top: 20px;
+	}
+
 	.modal-content {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #fff;
-	padding: 1rem 1.5rem;
-	width: 100%;
-	border-radius: 0.5rem;
+		background-color: #fff;
+		padding: 1rem 1.5rem;
+		border-radius: 0.5rem;
 	}
 
 	.show-modal {
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1.0);
-	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1.0);
+		transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 	}
+
+	.form__block {
+		margin: 0;
+		margin-top: 20px;
+		
+
+		label {
+			font-size: 14px;
+			color: #263238;
+			padding-left: 10px;
+			text-align: center;
+			vertical-align: middle;
+
+			@include mq($from: phablet) {
+				font-size: 16px;
+			}
+
+			@include mq($from: tablet-wide) {
+				font-size: 20px;
+			}
+
+			@include mq($from: desktop) {
+				font-size: 20px;
+			}
+		}
+	}
+
+
+	.form__block-title {
+		margin-bottom: 0;
+		margin-top: 30px;
+		text-align: center;
+		padding-left: 10px;
+		font-size: 14px;
+			color: #263238;
+
+		@include mq($from: phablet) {
+			font-size: 16px;
+		}
+
+		@include mq($from: tablet-wide) {
+			font-size: 20px;
+		}
+
+		@include mq($from: desktop) {
+			font-size: 20px;
+		}
+	}
+
+	.form__input {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+
+	.chain {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+
+	.chain__lable {
+		width: 40%;
+		margin-top: 30px;
+	}
+
+	.chain__checkbox {
+		display: none;
+	}
+
+	.chain__checkbox:checked + .chain__text::after {
+		opacity: 1;
+		transform: scale(1);
+		transition: 0.5s;
+	}
+
+	.chain__text {
+		position: relative;
+		font-size: 20px;
+		transition: 0.5s;
+
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.chain__checkbox:checked + .chain__text {
+		opacity: 0.3;
+	}
+		
+	
+
+	
+
+	

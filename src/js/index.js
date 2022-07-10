@@ -1,6 +1,7 @@
 let burgerBth = document.querySelector('.burger-bth');
 let menuNav = document.querySelector('.menu__nav');
 let menuBtn = document.querySelector('.menu__btn');
+let menuInner = document.querySelector('.menu__inner');
 
 if (burgerBth) {
   burgerBth.addEventListener('click', function (e) {
@@ -44,6 +45,10 @@ var closeButton = document.querySelector('.close-button');
 function toggleModal() {
   modal.classList.toggle('show-modal');
 
+  if (modal.classList.contains('show-modal')) {
+    document.body.classList.toggle('lock');
+  }
+
   if (menuNav) {
     menuNav.classList.remove('menu__nav-active');
     burgerBth.classList.remove('burger-bth-active');
@@ -54,6 +59,7 @@ function toggleModal() {
 function windowOnClick(event) {
   if (event.target === modal) {
     document.body.classList.remove('lock');
+
     toggleModal();
   }
 }
