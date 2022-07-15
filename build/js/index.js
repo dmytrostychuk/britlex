@@ -46,7 +46,6 @@ function toggleModal() {
   modal.classList.toggle('show-modal');
 
   if (modal.classList.contains('show-modal')) {
-    document.body.classList.toggle('lock');
   }
 
   if (menuNav) {
@@ -58,9 +57,8 @@ function toggleModal() {
 
 function windowOnClick(event) {
   if (event.target === modal) {
-    document.body.classList.remove('lock');
-
     toggleModal();
+    document.body.classList.remove('lock');
   }
 }
 

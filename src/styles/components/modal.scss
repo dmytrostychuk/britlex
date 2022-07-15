@@ -13,7 +13,7 @@
 	}
 
 	.modal__inner {
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 50%;
 		transform: translate(-50%);
@@ -22,9 +22,11 @@
 	}
 
 	.modal-content {
+		height: 90vh;
 		background-color: #fff;
 		padding: 1rem 1.5rem;
 		border-radius: 0.5rem;
+		overflow: auto;
 	}
 
 	.show-modal {
