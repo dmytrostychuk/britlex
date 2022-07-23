@@ -17,14 +17,14 @@ const menuLink = document.querySelectorAll('.menu__link');
 for (let menuLinks of menuLink) {
   menuLinks.addEventListener('click', function (e) {
     if (menuNav) {
-      document.body.classList.toggle('lock');
+      document.body.classList.remove('lock');
       menuNav.classList.remove('menu__nav-active');
       burgerBth.classList.remove('burger-bth-active');
       menuBtn.classList.remove('menu__btn-active');
     }
 
     if (menuNav) {
-      document.body.classList.remove('lock');
+      document.body.classList.toggle('lock');
     }
 
     e.preventDefault();
@@ -49,6 +49,7 @@ function toggleModal() {
   }
 
   if (menuNav) {
+    document.body.classList.remove('lock');
     menuNav.classList.remove('menu__nav-active');
     burgerBth.classList.remove('burger-bth-active');
     menuBtn.classList.remove('menu__btn-active');
@@ -58,7 +59,6 @@ function toggleModal() {
 function windowOnClick(event) {
   if (event.target === modal) {
     toggleModal();
-    document.body.classList.remove('lock');
   }
 }
 
