@@ -22,6 +22,7 @@
 	}
 
 	.modal-content {
+		position: relative;
 		height: 90vh;
 		background-color: #fff;
 		padding: 1rem 1.5rem;
@@ -125,6 +126,28 @@
 
 	.chain__checkbox:checked + .chain__text {
 		opacity: 0.3;
+	}
+
+	.close-button {
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			right: 25px;
+			top: 40px;
+			width: 20px;
+			height: 3px;
+			background-color: #263238;
+		}
+
+		&::after {
+			transform: rotate(45deg);
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
 	}
 		
 	
