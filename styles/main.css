@@ -941,6 +941,7 @@ input {
 }
 
 .modal-content {
+  position: relative;
   height: 90vh;
   background-color: #fff;
   padding: 1rem 1.5rem;
@@ -1021,6 +1022,23 @@ input {
   opacity: 0.3;
 }
 
+.close-button::after, .close-button::before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  width: 20px;
+  height: 3px;
+  background-color: #263238;
+}
+.close-button::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close-button::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 @media (min-width: 575px) {
   .header {
     margin-bottom: 95px;
@@ -1198,7 +1216,6 @@ input {
     font-size: 16px;
   }
 }
-
 @media (min-width: 768px) {
   .header {
     margin-bottom: 55px;
@@ -1439,7 +1456,6 @@ input {
     font-size: 13px;
   }
 }
-
 @media (min-width: 992px) {
   .header {
     margin-bottom: 72px;
@@ -1634,7 +1650,6 @@ input {
     font-size: 20px;
   }
 }
-
 @media (min-width: 1338px) {
   .header {
     margin-bottom: 147px;
