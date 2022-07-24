@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="menu">
         <h1 class="menu__logo">
@@ -28,7 +28,7 @@
             </ul>
           </div>
         </nav>
-        <button type="button" class="menu__btn example">
+        <button type="button" class="menu__btn modal-active">
           Let's Talk
         </button>
       </div>
@@ -257,21 +257,21 @@
         <h1 class="menu__logo modal-logo">
           <a href="#"><span class="menu__logo-start">Brit</span><span class="menu__logo-finish">lex</span></a>
         </h1>
-        <form class="form" name="test" method="post">
+        <form class="form modal__form" name="test" method="post">
           <div class="form__block ">
             <label for="form__name">Name:</label>
-            <input class="form__input" id="form__name" type="name" placeholder="Dima*">
+            <input class="form__input modal__input" id="form__name" type="name" placeholder="by Dima Stychuk*">
           </div>
           <div class="form__block">
             <label for="form__email">E-mail:</label>
-            <input class="form__input" id="form__email" type="email" placeholder="exampl@email.com">
+            <input class="form__input modal__input" id="form__email" type="email" placeholder="exampl@email.com">
           </div>
           <div class="form__block">
             <label for="form__number">Number:</label>
-            <input class="form__input" id="form__number" type="phone" placeholder="+3809999999">
+            <input class="form__input modal__input" id="form__number" type="phone" placeholder="+3809999999">
           </div>
 
-          <div class="form__block">
+          <div class="form__block form__block-contact">
             <p class="form__block-title skills__content-title">How to contact you?</p>
             <div class="chain">
               <label class="chain__lable">
@@ -280,7 +280,7 @@
               </label>
 
               <label class="chain__lable">
-                <input class="chain__checkbox" type="radio" name="contact" checked>
+                <input class="chain__checkbox" type="radio" name="contact">
                 <span class="chain__text"><img src="img/telegram.png" alt="" width="20" height="20"></span>
               </label>
 
@@ -304,11 +304,11 @@
                 <span class="chain__text"><img src="img/mail.png" alt="" width="20" height="20"></span>
               </label>
 
-
+              <input class="button modal__btn" type="submit" value="Subscribe">
             </div>
 
           </div>
-          <input class="button form__btn" type="submit" value="Subscribe">
+
         </form>
       </div>
     </div>
