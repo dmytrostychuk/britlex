@@ -24,7 +24,7 @@
 	font-size: 13px;
 	line-height: 19.5px;
 	color: #8F95A5;
-	text-align: center;
+	text-align: start;
 
 	@include mq($from: phablet) {
 		font-size: 12px;

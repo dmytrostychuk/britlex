@@ -60,15 +60,15 @@ img {
   }
 
   @include mq($from: phablet) {
-    margin-bottom: 85px;
+    margin-bottom: 110px;
   }
 
   @include mq($from: tablet) {
-    margin-bottom: 90px;
+    margin-bottom: 110px;
   }
 
   @include mq($from: tablet-wide) {
-    margin-bottom: 105px;
+    margin-bottom: 115px;
   }
 
   @include mq($from: desktop) {

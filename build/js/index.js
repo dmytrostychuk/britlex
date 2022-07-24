@@ -1,7 +1,6 @@
 let burgerBth = document.querySelector('.burger-bth');
 let menuNav = document.querySelector('.menu__nav');
 let menuBtn = document.querySelector('.menu__btn');
-let menuInner = document.querySelector('.menu__inner');
 
 if (burgerBth) {
   burgerBth.addEventListener('click', function (e) {
@@ -17,14 +16,14 @@ const menuLink = document.querySelectorAll('.menu__link');
 for (let menuLinks of menuLink) {
   menuLinks.addEventListener('click', function (e) {
     if (menuNav) {
-      document.body.classList.remove('lock');
+      document.body.classList.toggle('lock');
       menuNav.classList.remove('menu__nav-active');
       burgerBth.classList.remove('burger-bth-active');
       menuBtn.classList.remove('menu__btn-active');
     }
 
     if (menuNav) {
-      document.body.classList.toggle('lock');
+      document.body.classList.remove('lock');
     }
 
     e.preventDefault();
@@ -39,17 +38,18 @@ for (let menuLinks of menuLink) {
 }
 
 var modal = document.querySelector('.modal');
-var trigger = document.querySelector('.example');
+var trigger = document.querySelector('.modal-active');
 var closeButton = document.querySelector('.close-button');
 
 function toggleModal() {
   modal.classList.toggle('show-modal');
 
   if (modal.classList.contains('show-modal')) {
+  } else {
+    document.body.classList.remove('lock');
   }
 
   if (menuNav) {
-    document.body.classList.remove('lock');
     menuNav.classList.remove('menu__nav-active');
     burgerBth.classList.remove('burger-bth-active');
     menuBtn.classList.remove('menu__btn-active');

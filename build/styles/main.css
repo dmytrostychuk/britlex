@@ -715,7 +715,7 @@ a:active {
   font-size: 13px;
   line-height: 19.5px;
   color: #8F95A5;
-  text-align: center;
+  text-align: start;
 }
 
 .skills__container {
@@ -726,6 +726,8 @@ a:active {
   position: relative;
   background-color: #F5F5F5;
   border-radius: 5px;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .skills__content {
@@ -795,6 +797,7 @@ a:active {
   margin: auto;
   position: relative;
 }
+
 .pricing__content {
   position: relative;
 }
@@ -806,6 +809,7 @@ a:active {
 
 .pricing__text {
   font-size: 13px;
+  text-align: center;
 }
 
 .pricing__button {
@@ -908,6 +912,7 @@ input {
 
 .footer-text {
   font-size: 11px;
+  text-align: center;
 }
 .footer-text a {
   color: #8F95A5;
@@ -977,10 +982,10 @@ input {
   text-align: center;
   padding-left: 10px;
   font-size: 14px;
-  color: #263238;
+  color: #8F95A5;
 }
 
-.form__input {
+.modal__input {
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -989,7 +994,7 @@ input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .chain__lable {
@@ -1041,6 +1046,7 @@ input {
   width: 20px;
   height: 3px;
   background-color: #263238;
+  border-radius: 5px;
 }
 .close-button::after {
   -webkit-transform: rotate(45deg);
@@ -1050,6 +1056,13 @@ input {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+.modal__btn {
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
 @media (min-width: 575px) {
   .header {
     margin-bottom: 95px;
@@ -1058,7 +1071,7 @@ input {
     padding: 0 30px;
   }
   .section {
-    margin-bottom: 85px;
+    margin-bottom: 110px;
   }
   .menu__logo {
     font-size: 30px;
@@ -1164,7 +1177,9 @@ input {
   .about__stat {
     display: flex;
     justify-content: space-between;
-    margin: 0 80px;
+  }
+  .about__stat-container {
+    width: 33%;
   }
   .about__stat-text {
     font-size: 14px;
@@ -1220,13 +1235,40 @@ input {
   .footer-text {
     font-size: 12px;
   }
+  .form__block {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    align-items: center;
+  }
   .form__block label {
     font-size: 16px;
   }
+  .form__block-contact {
+    align-items: inherit;
+    flex-direction: column;
+  }
   .form__block-title {
-    font-size: 16px;
+    font-size: 18px;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .modal__input {
+    width: 55vw;
+  }
+  .chain__text img {
+    width: 50px;
+    height: 50px;
+  }
+  .modal__btn {
+    position: relative;
+    align-items: center;
+    margin-top: 40px;
   }
 }
+
 @media (min-width: 768px) {
   .header {
     margin-bottom: 55px;
@@ -1235,7 +1277,7 @@ input {
     padding: 0 38px;
   }
   .section {
-    margin-bottom: 90px;
+    margin-bottom: 110px;
   }
   .menu__nav {
     font-size: 22px;
@@ -1307,6 +1349,8 @@ input {
   .skills__card {
     min-height: auto;
     width: auto;
+    max-width: 900px;
+    margin: 1px;
     margin-bottom: 0;
   }
   .skills__card:nth-child(1) {
@@ -1378,6 +1422,7 @@ input {
   }
   .about__stat-container {
     margin-top: 10px;
+    width: auto;
   }
   .about__stat-number {
     font-size: 22px;
@@ -1466,7 +1511,20 @@ input {
   .footer-text {
     font-size: 13px;
   }
+  .modal__form {
+    flex-direction: column;
+  }
+  .chain {
+    margin-top: 20px;
+  }
+  .chain__lable {
+    width: auto;
+  }
+  .modal__btn {
+    height: 50px;
+  }
 }
+
 @media (min-width: 992px) {
   .header {
     margin-bottom: 72px;
@@ -1475,7 +1533,7 @@ input {
     padding: 0 31px;
   }
   .section {
-    margin-bottom: 105px;
+    margin-bottom: 115px;
   }
   .menu__nav {
     position: relative;
@@ -1608,7 +1666,7 @@ input {
     font-size: 16px;
   }
   .pricing__card {
-    min-height: 555px;
+    min-height: 540px;
   }
   .pricing__content {
     padding: 0 20px;
@@ -1661,6 +1719,7 @@ input {
     font-size: 20px;
   }
 }
+
 @media (min-width: 1338px) {
   .header {
     margin-bottom: 147px;
@@ -1815,10 +1874,29 @@ input {
   .footer-text {
     font-size: 24px;
   }
+  .modal__inner {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 1000px;
+  }
+  .modal-content {
+    height: 80vh;
+  }
+  .form__block {
+    max-width: 900px;
+  }
   .form__block label {
     font-size: 20px;
   }
   .form__block-title {
     font-size: 20px;
+  }
+  .modal__input {
+    width: 85%;
+  }
+  .modal__btn {
+    height: 80px;
   }
 }

@@ -19,6 +19,13 @@
 		transform: translate(-50%);
 		width: 90%;
 		margin-top: 20px;
+
+		@include mq($from: desktop) {
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 1000px;
+		}
 	}
 
 	.modal-content {
@@ -28,6 +35,9 @@
 		padding: 1rem 1.5rem;
 		border-radius: 0.5rem;
 		overflow: auto;
+		@include mq($from: desktop) {
+			height: 80vh;
+		}
 	}
 
 	.show-modal {
@@ -37,10 +47,29 @@
 		transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 	}
 
+	.modal__form {
+
+		@include mq($from: tablet) {
+			flex-direction: column;
+		}
+	}
+
 	.form__block {
 		margin: 0;
 		margin-top: 20px;
-		
+
+		@include mq($from: phablet) {
+			display: flex;
+   		justify-content: space-between;
+			width: 70vw;
+			margin: 0 auto;
+			margin-top: 20px;
+    	align-items: center;
+		}
+
+		@include mq($from: desktop) {
+			max-width: 900px;
+		}
 
 		label {
 			font-size: 14px;
@@ -63,6 +92,13 @@
 		}
 	}
 
+	.form__block-contact {
+
+		@include mq($from: phablet) {
+			align-items: inherit;
+			flex-direction: column;
+		}
+	}
 
 	.form__block-title {
 		margin-bottom: 0;
@@ -70,10 +106,12 @@
 		text-align: center;
 		padding-left: 10px;
 		font-size: 14px;
-			color: #263238;
+			color: #8F95A5;
 
 		@include mq($from: phablet) {
-			font-size: 16px;
+			font-size: 18px;
+			padding: 0;
+			margin-top: 30px;
 		}
 
 		@include mq($from: tablet-wide) {
@@ -85,9 +123,17 @@
 		}
 	}
 
-	.form__input {
+	.modal__input {
 		margin-top: 10px;
 		margin-bottom: 0;
+
+		@include mq($from: phablet) {
+			width: 55vw;
+		}
+
+		@include mq($from: desktop) {
+			width: 85%;
+		}
 	}
 
 
@@ -95,12 +141,20 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+
+		@include mq($from: tablet) {
+			margin-top: 20px;
+		}
 	}
 
 	.chain__lable {
 		width: 40%;
 		margin-top: 30px;
+
+		@include mq($from: tablet) {
+			width: auto;
+		}
 	}
 
 	.chain__checkbox {
@@ -121,6 +175,12 @@
 		img {
 			width: 40px;
 			height: 40px;
+
+			@include mq($from: phablet) {
+				width: 50px;
+				height: 50px;
+			}
+
 		}
 	}
 
@@ -137,6 +197,7 @@
 		padding: 0;
 		margin: 0;
 		border: none;
+		
 		cursor: pointer;
 		background-color: transparent;
 
@@ -148,6 +209,7 @@
 			width: 20px;
 			height: 3px;
 			background-color: #263238;
+			border-radius: 5px;
 		}
 
 		&::after {
@@ -156,6 +218,26 @@
 
 		&::before {
 			transform: rotate(-45deg);
+		}
+	}
+
+	.modal__btn {
+		height: 60px;
+		margin-top: 30px;
+		margin-bottom: 0;
+		
+		@include mq($from: phablet) {
+			position: relative;
+			align-items: center;
+			margin-top: 40px;
+		}
+
+		@include mq($from: tablet) {
+			height: 50px;
+		}	
+		
+		@include mq($from: desktop) {
+			height: 80px;
 		}
 	}
 		

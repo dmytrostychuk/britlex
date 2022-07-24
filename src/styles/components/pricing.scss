@@ -31,7 +31,7 @@
 	}
 
 	@include mq($from: tablet-wide) {
-		min-height: 555px;
+		min-height: 540px;
 	}
 
 	@include mq($from: desktop) {
@@ -67,11 +67,6 @@
 	right: 50%;
 	transform: translate(50%);
 	}
-
-	@include mq($from: tablet-wide) {
-
-	}
-	
 }
 
 .pricing__content {
@@ -126,6 +121,7 @@
 
 .pricing__text {
 	font-size: 13px;
+	text-align: center;
 
 	@include mq($from: phablet) {
 		font-size: 14px;
