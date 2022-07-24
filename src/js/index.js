@@ -1,12 +1,12 @@
-let burgerBth = document.querySelector('.burger-bth');
+let burgerBtn = document.querySelector('.burger-btn');
 let menuNav = document.querySelector('.menu__nav');
 let menuBtn = document.querySelector('.menu__btn');
 
-if (burgerBth) {
-  burgerBth.addEventListener('click', function (e) {
+if (burgerBtn) {
+  burgerBtn.addEventListener('click', function (e) {
     document.body.classList.toggle('lock');
     menuNav.classList.toggle('menu__nav-active');
-    burgerBth.classList.toggle('burger-bth-active');
+    burgerBtn.classList.toggle('burger-btn-active');
     menuBtn.classList.toggle('menu__btn-active');
   });
 }
@@ -18,7 +18,7 @@ for (let menuLinks of menuLink) {
     if (menuNav) {
       document.body.classList.toggle('lock');
       menuNav.classList.remove('menu__nav-active');
-      burgerBth.classList.remove('burger-bth-active');
+      burgerBtn.classList.remove('burger-btn-active');
       menuBtn.classList.remove('menu__btn-active');
     }
 
@@ -44,14 +44,17 @@ var closeButton = document.querySelector('.close-button');
 function toggleModal() {
   modal.classList.toggle('show-modal');
 
-  if (modal.classList.contains('show-modal')) {
-  } else {
+  console.log('toggleModal');
+
+  if (window.innerWidth > 991) {
+    document.body.classList.toggle('lock');
+  } else if (!modal.classList.contains('show-modal')) {
     document.body.classList.remove('lock');
   }
 
   if (menuNav) {
     menuNav.classList.remove('menu__nav-active');
-    burgerBth.classList.remove('burger-bth-active');
+    burgerBtn.classList.remove('burger-btn-active');
     menuBtn.classList.remove('menu__btn-active');
   }
 }
