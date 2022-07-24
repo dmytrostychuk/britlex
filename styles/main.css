@@ -574,7 +574,7 @@ a:active {
   background-color: #ffffff;
 }
 
-.burger-bth {
+.burger-btn {
   position: relative;
   width: 33px;
   height: 20px;
@@ -584,8 +584,8 @@ a:active {
   background-color: transparent;
   cursor: pointer;
 }
-.burger-bth::before, .burger-bth::after,
-.burger-bth span {
+.burger-btn::before, .burger-btn::after,
+.burger-btn span {
   content: "";
   position: absolute;
   left: 0;
@@ -596,39 +596,39 @@ a:active {
   border-radius: 3px;
   transition: 0.3s;
 }
-.burger-bth span {
+.burger-btn span {
   top: 7px;
 }
-.burger-bth::before, .burger-bth::after {
+.burger-btn::before, .burger-btn::after {
   transition: 0.5s;
 }
-.burger-bth::before {
+.burger-btn::before {
   top: 5px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
-.burger-bth::after {
+.burger-btn::after {
   top: 10px;
   width: 16px;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
 
-.burger-bth-active {
+.burger-btn-active {
   width: 20px;
   height: 20px;
 }
-.burger-bth-active span {
+.burger-btn-active span {
   opacity: 0;
   width: 17px;
 }
-.burger-bth-active::before {
+.burger-btn-active::before {
   top: 10px;
   width: 17px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.burger-bth-active::after {
+.burger-btn-active::after {
   top: 10px;
   width: 17px;
   -webkit-transform: rotate(-45deg);
@@ -1080,31 +1080,31 @@ input {
     top: 80px;
     font-size: 24px;
   }
-  .burger-bth {
+  .burger-btn {
     width: 42px;
     height: 24px;
     right: 0;
   }
-  .burger-bth::before, .burger-bth::after,
-.burger-bth span {
+  .burger-btn::before, .burger-btn::after,
+.burger-btn span {
     height: 4px;
     width: 42px;
   }
-  .burger-bth::after {
+  .burger-btn::after {
     top: 16px;
     width: 21px;
   }
-  .burger-bth span {
+  .burger-btn span {
     top: 10px;
   }
-  .burger-bth-active spam {
+  .burger-btn-active spam {
     width: 20px;
   }
-  .burger-bth-active::before {
+  .burger-btn-active::before {
     width: 20px;
     margin-left: 17px;
   }
-  .burger-bth-active::after {
+  .burger-btn-active::after {
     top: 10px;
     width: 20px;
     margin-left: 17px;
@@ -1297,7 +1297,7 @@ input {
     left: -1px;
     height: 100%;
   }
-  .burger-bth-active {
+  .burger-btn-active {
     right: 43vw;
   }
   .menu__btn {
@@ -1568,7 +1568,7 @@ input {
     height: auto;
     width: auto;
   }
-  .burger-bth {
+  .burger-btn {
     display: none;
   }
   .menu__btn {
