@@ -18,4 +18,5 @@
   <li>Sass</li>  
   <li>PixelPerfect</li>
   <li>Swiper</li>
+  <li>Figma</li>
 </ul>
