@@ -4,7 +4,7 @@
   </a>
 </h1>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/72120575/165741956-065fb392-38a5-45db-8310-156e36580d48.jpg">
+  <img src="https://github.com/dmytrostychuk/britlex/assets/72120575/bf5f1fee-d816-4d51-bace-24c260fe0efd.jpg">
 </p>
 <h2>
   Technologies what I used:
@@ -19,3 +19,5 @@
   <li>PixelPerfect</li>
   <li>Swiper</li>
 </ul>
+
+![device](https://github.com/dmytrostychuk/britlex/assets/72120575/bf5f1fee-d816-4d51-bace-24c260fe0efd)
