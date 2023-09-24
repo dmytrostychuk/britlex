@@ -19,5 +19,3 @@
   <li>PixelPerfect</li>
   <li>Swiper</li>
 </ul>
-
-![device](https://github.com/dmytrostychuk/britlex/assets/72120575/bf5f1fee-d816-4d51-bace-24c260fe0efd)
